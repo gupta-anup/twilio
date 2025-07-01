@@ -1,0 +1,46 @@
+### Twilio SMS Service API Tests
+### Base URL: http://localhost:8080
+
+### 1. Health Checks
+GET http://localhost:8080/api/sms/health
+Accept: text/plain
+
+###
+
+GET http://localhost:8080/actuator/health
+Accept: application/json
+
+###
+
+### 2. Send Single SMS - Valid Request
+POST http://localhost:8080/api/sms/send
+Content-Type: application/json
+
+{
+  "phoneNumber": "+1234567890",
+  "message": "Hello from Twilio SMS Service! This is a test message."
+}
+
+###
+
+### 3. Send SMS - Invalid Phone Number
+POST http://localhost:8080/api/sms/send
+Content-Type: application/json
+
+{
+  "phoneNumber": "1234567890",
+  "message": "This should fail due to invalid phone format"
+}
+
+###
+
+### 6. Send Bulk SMS - Valid Request
+POST http://localhost:8080/api/sms/send-bulk
+Content-Type: application/json
+
+{
+  "phoneNumbers": ["+1234567890", "+19876543210"],
+  "message": "Bulk SMS test message"
+}
+
+###
