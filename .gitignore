@@ -39,3 +39,8 @@ application.yml
 application-*.yml
 application.yaml
 application-*.yaml
+
+### Logs ###
+*.log
+logs/
+hs_err_pid*.log
