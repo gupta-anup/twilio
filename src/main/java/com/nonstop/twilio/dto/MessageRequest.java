@@ -22,4 +22,8 @@ public class MessageRequest {
     
     @NotBlank(message = "Message is required")
     private String message;
+    
+    // optional fields for email
+    private String subject;
+    private String htmlContent;
 }
