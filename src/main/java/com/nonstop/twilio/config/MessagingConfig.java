@@ -12,10 +12,10 @@ import com.twilio.Twilio;
 @Configuration
 public class MessagingConfig {
     
-    @Value("${messaging.twilio.account-sid}")
+    @Value("${twilio.account-sid}")
     private String twilioAccountSid;
     
-    @Value("${messaging.twilio.auth-token}")
+    @Value("${twilio.auth-token}")
     private String twilioAuthToken;
     
     @PostConstruct
