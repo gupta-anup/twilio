@@ -8,7 +8,8 @@ import lombok.Getter;
 public enum MessageChannel {
     SMS("sms"),
     WHATSAPP("whatsapp"),
-    FACEBOOK("facebook");
+    FACEBOOK("facebook"),
+    EMAIL("email");
     
     private final String value;
     
