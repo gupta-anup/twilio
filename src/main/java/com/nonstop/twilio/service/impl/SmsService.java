@@ -17,7 +17,7 @@ public class SmsService implements MessageService {
     
     private static final Logger logger = LoggerFactory.getLogger(SmsService.class);
     
-    @Value("${messaging.twilio.phone-number}")
+    @Value("${twilio.phone-number}")
     private String fromPhoneNumber;
     
     @Override

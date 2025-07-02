@@ -31,7 +31,7 @@ public class EmailService implements MessageService {
     @Value("${sendgrid.from-email}")
     private String fromEmail;
     
-    @Value("${sendgrid.from-name:Twilio Messaging Service}")
+    @Value("${sendgrid.from-name}")
     private String fromName;
     
     @Override

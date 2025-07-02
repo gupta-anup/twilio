@@ -17,7 +17,7 @@ public class WhatsAppService implements MessageService {
     
     private static final Logger logger = LoggerFactory.getLogger(WhatsAppService.class);
     
-    @Value("${messaging.twilio.whatsapp-number}")
+    @Value("${twilio.whatsapp-number}")
     private String fromWhatsAppNumber;
     
     @Override

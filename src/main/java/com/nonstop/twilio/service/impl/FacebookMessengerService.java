@@ -22,10 +22,10 @@ public class FacebookMessengerService implements MessageService {
     
     private static final Logger logger = LoggerFactory.getLogger(FacebookMessengerService.class);
     
-    @Value("${messaging.facebook.page-access-token}")
+    @Value("${facebook.page-access-token}")
     private String pageAccessToken;
     
-    @Value("${messaging.facebook.api-version:v18.0}")
+    @Value("${facebook.api-version}")
     private String apiVersion;
     
     @Autowired
